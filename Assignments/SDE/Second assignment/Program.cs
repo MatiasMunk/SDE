@@ -31,7 +31,7 @@ namespace Second_assignment
         {
             bool divisable = false;
             divisable = _num1 % 2 == 0 && (_num2 % 2 == 0 ? true : false);
-            if(divisable) divisable = _num2 % 3 == 0 && (_num2 % 3 == 0 ? true : false);
+            divisable = _num2 % 3 == 0 && (_num2 % 3 == 0 ? true : false);
             return divisable ? _num1 * _num2 : _num1 + _num2;
         }
 
@@ -45,9 +45,7 @@ namespace Second_assignment
             if (_arr.Length < 3)
                 return false;
 
-            bool SumMul = (_arr[0] + _arr[1]) > _arr[2] ? true : (_arr[0] * _arr[1]) > _arr[2] ? true : false;
-
-            return SumMul;
+            return (_arr[0] + _arr[1]) > _arr[2] ? true : (_arr[0] * _arr[1]) > _arr[2] ? true : false;
         }
 
         private static bool IsEven(int _num)
@@ -74,7 +72,8 @@ namespace Second_assignment
 
         private static bool IsLeapYear(int _year)
         {
-            return _year % 4 == 0;
+            //return DateTime.IsLeapYear(_year); //C# Native function
+            return _year % 4 == 0 && (_year % 100 != 0 || _year % 400 == 0); //Our own approach
         }
     }
 }
