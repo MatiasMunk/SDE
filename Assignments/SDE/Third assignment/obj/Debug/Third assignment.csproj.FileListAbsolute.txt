@@ -1,0 +1,8 @@
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\bin\Debug\Third assignment.exe.config
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\bin\Debug\Third assignment.exe
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\bin\Debug\Third assignment.pdb
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\obj\Debug\Third assignment.csproj.AssemblyReference.cache
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\obj\Debug\Third assignment.csproj.SuggestedBindingRedirects.cache
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\obj\Debug\Third assignment.csproj.CoreCompileInputs.cache
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\obj\Debug\Third assignment.exe
+C:\Users\HFGF\Desktop\dev\SDE\Assignments\SDE\Third assignment\obj\Debug\Third assignment.pdb
