@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Fourth_assignment
 {
@@ -114,6 +112,7 @@ namespace Fourth_assignment
             char prev_char;
             prev_char = _text[0];
             int count = 0;
+
             for (int i = 0; i < _text.Length; i++)
             {
                 if (_text[i].ToString() != prev_char.ToString())
