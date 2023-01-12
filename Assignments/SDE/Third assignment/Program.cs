@@ -15,10 +15,11 @@ namespace Third_assignment
             Console.WriteLine("Given the row of numbers [8, 2, 5, 7, 9, 0, 7, 7, 3, 1], the number 7 is adjacent to another 7 " + AdjacentNumCount(new int[] { 8, 2, 5, 7, 9, 0, 7, 7, 3, 1 }) + " times");
             Console.WriteLine("given the row of numbers [45, 23, 44, 68, 65, 70, 80, 81, 82], are there three adjacent numbers that increase by 1 from left to right? " + ThreeIncreasingAdjacent(new int[] { 45, 23, 44, 68, 65, 70, 80, 81, 82 }));
             Console.Write("Prime numbers of 30 are ");
-            foreach(var i in PrimeNumbers(30))
+            foreach(var i in PrimeNumbers(50))
             {
                 Console.Write(i + " ");
             }
+            Console.WriteLine();
 
             Console.WriteLine("Text between ##'s of string \"++##--##++\" is " + ExtractString("++##--##++"));
             Console.WriteLine("Alphabet between d & s is " + AlphabetBetween("ds"));
