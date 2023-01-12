@@ -116,7 +116,7 @@ namespace Fourth_assignment
             int count = 0;
             for (int i = 0; i < _text.Length; i++)
             {
-                if (_text.ElementAt(i).ToString() != prev_char.ToString())
+                if (_text[i].ToString() != prev_char.ToString())
                 {
                     compressed_string += prev_char;
                     compressed_string += count.ToString();
