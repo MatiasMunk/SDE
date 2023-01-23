@@ -14,7 +14,6 @@ int main()
     for(;;)
     {
         unsigned char roll = 1 + rand() % 6;
-        printf("Rolled: %i\n", roll);
         throws++;
         
         if(roll == 6)
@@ -26,7 +25,7 @@ int main()
         else sixes = 0;
     }
 
-    printf("Throws: %i\n", throws);
+    printf("Throws: %i\n", throws / dices);
 
     return 0;
 }
