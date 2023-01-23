@@ -5,27 +5,29 @@
 int main()
 {
     srand(time(NULL));
-    unsigned int throws = 0;
     unsigned int dices = 0;
-    
     scanf("%i", &dices);
     
-    unsigned char sixes = 0;
-    for(;;)
+    for(int i = 0; i < 10; i++)
     {
-        unsigned char roll = 1 + rand() % 6;
-        throws++;
-        
-        if(roll == 6)
+        unsigned int throws = 0;
+        unsigned char sixes = 0;
+        for(;;)
         {
-            sixes++;
-            if(sixes == dices)
-            break;
+            unsigned char roll = 1 + rand() % 6;
+            throws++;
+            
+            if(roll == 6)
+            {
+                sixes++;
+                if(sixes == dices)
+                break;
+            }
+            else sixes = 0;
         }
-        else sixes = 0;
-    }
 
-    printf("Throws: %i\n", throws / dices);
+        printf("Throws: %i\n", throws / dices);
+    }
 
     return 0;
 }
