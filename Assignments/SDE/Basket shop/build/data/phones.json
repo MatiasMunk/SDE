@@ -1,0 +1,106 @@
+[
+	{
+		"id": 1,
+		"product": "Galaxy S20",
+		"brand": "Samsung",
+		"model": "SM-G981U",
+		"category": "Smartphones",
+		"description": "Galaxy S20 is a great phone!",
+		"currency": "USD",
+		"price": 549,
+		"stock": 5,
+		"launch": 
+		{
+			"announced": "2020. Februrary 11",
+			"release": "2020-03-06T00:00:00.000Z"
+		},
+		"body":
+		{
+			"dimensions": "151.7 x 69.1 x 7.9 mm",
+			"weight": "163 g (5.75 oz)",
+			"build": "Glass front (Gorilla Glass 6), glass back (Gorilla Glass 6), aluminum frame"
+		},
+		"display": 
+		{
+			"size": "6.2 inches",
+			"resolution": "1440x3200, 20:9 ratio (~563 ppi density)",
+			"protection": "Corning Gorilla Glass 6",
+			"hz": "120 Hz@FHD/60 Hz@QHD refresh rate"
+		},
+		"platform": 
+		{
+			"os": "Android 10",
+			"chipset": "Exynos 990",
+			"cpu": "Octa-core (2x2.74 GHz Mongoose M5",
+			"gpu": "Adreno 650"
+		},
+		"memory":
+		{
+			"internal": "128GB RAM"
+		},
+		"battery": 
+		{
+			"type": "Li-Ion 4000 mAh, non-removable",
+			"charging": "25W wired"
+		},
+		"images":
+		{
+			"front": "1.png",
+			"back": "2.png",
+			"side": "3.png",
+			"thumbnail": "thumbnail.png"
+		}
+	},
+	{
+		"id": 2,
+		"product": "Galaxy S21",
+		"brand": "Samsung",
+		"model": "SM-G991U1",
+		"category": "Smartphones",
+		"description": "Galaxy S21 is a great phone!",
+		"currency": "USD",
+		"price": 549,
+		"stock": 5,
+		"launch": 
+		{
+			"announced": "2020. Februrary 11",
+			"release": "2020-03-06T00:00:00.000Z"
+		},
+		"body":
+		{
+			"dimensions": "151.7 x 69.1 x 7.9 mm",
+			"weight": "163 g (5.75 oz)",
+			"build": "Glass front (Gorilla Glass 6), glass back (Gorilla Glass 6), aluminum frame"
+		},
+		"display": 
+		{
+			"size": "6.2 inches",
+			"resolution": "1440x3200, 20:9 ratio (~563 ppi density)",
+			"protection": "Corning Gorilla Glass 6",
+			"hz": "120 Hz@FHD/60 Hz@QHD refresh rate"
+		},
+		"platform": 
+		{
+			"os": "Android 10",
+			"chipset": "Exynos 990",
+			"cpu": "Octa-core (2x2.74 GHz Mongoose M5",
+			"gpu": "Adreno 650"
+		},
+		"memory":
+		{
+			"internal": "128GB RAM"
+		},
+		"battery": 
+		{
+			"type": "Li-Ion 4000 mAh, non-removable",
+			"charging": "25W wired"
+		},
+		"images":
+		{
+			"front": "1.png",
+			"back": "2.png",
+			"side": "3.png",
+			"thumbnail": "thumbnail.png"
+		}
+	}
+]

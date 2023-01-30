@@ -1,0 +1,13 @@
+{
+    "name": "(gdb) Launch",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "${workspaceFolder}\\build\\wojak.exe",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}\\build",
+    "externalConsole": false,
+    "MIMode": "gdb",
+    "miDebuggerPath": "C:\\mingw64\\bin\\gdb.exe",
+    "preLaunchTask": "${defaultBuildTask}",
+  }
