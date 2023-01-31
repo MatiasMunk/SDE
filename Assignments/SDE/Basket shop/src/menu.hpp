@@ -45,7 +45,7 @@ public:
 	int* shop_page;
 
 public:
-	Menu(int _x, int _y, int _w, int _h, FontHandler &_font_handler, int&_shop_page);
+	Menu(int _x, int _y, int _w, int _h, FontHandler &_font_handler, int& _shop_page);
 	~Menu();
 
 	void HandleEvent(ALLEGRO_EVENT& _event);

@@ -3,22 +3,22 @@
 #include <iostream>
 
 bool GFXHandler::initialized_ = false;
-std::map<unsigned int, std::unique_ptr<GFXHandler::Directory>> GFXHandler::directories;
+std::map<std::string, std::unique_ptr<GFXHandler::Directory>> GFXHandler::directories;
 std::string GFXHandler::path;
 
 GFXHandler::GFXHandler()
 {
     if (!this->initialized_)
     {
-        this->path = "images/products/";
+        this->path = "";
 
         this->initialized_ = true;
     }
 }
 
-GFXHandler::GFXHandler(std::string path)
+GFXHandler::GFXHandler(std::string _path)
 {
-    this->path = path;
+    this->path = _path;
 
     if (!this->initialized_)
     {
@@ -26,26 +26,26 @@ GFXHandler::GFXHandler(std::string path)
     }
 }
 
-GFXHandler::Directory::Directory(std::string path, unsigned int id)
+GFXHandler::Directory::Directory(std::string _path)
 {
-    this->path = path;
-    this->id = id;
+    this->path = _path;
 }
 
-ALLEGRO_BITMAP* GFXHandler::Directory::GetBitmap(std::string png)
+ALLEGRO_BITMAP* GFXHandler::Directory::GetBitmap(std::string _file)
 {
-    if (this->bitmaps.find(id) == this->bitmaps.end())
+    if (this->bitmaps.find(_file) == this->bitmaps.end())
     {
-        std::string filename = path + "/" + std::to_string(this->id) + "/" + png;
-        this->bitmaps[id] = al_load_bitmap(filename.c_str());
+        std::string filename = path + "/" + _file;
 
-        if (!this->bitmaps[id])
+        this->bitmaps[_file] = al_load_bitmap(filename.c_str());
+
+        if (!this->bitmaps[_file])
         {
             return NULL;
         }
     }
 
-    return this->bitmaps[id];
+    return this->bitmaps[_file];
 }
 
 void GFXHandler::Directory::Clear()
@@ -58,14 +58,15 @@ void GFXHandler::Directory::Clear()
     this->bitmaps.clear();
 }
 
-ALLEGRO_BITMAP* GFXHandler::GetBitmap(std::string product_path, unsigned int dir_id, std::string png)
+ALLEGRO_BITMAP* GFXHandler::GetBitmap(std::string _path, std::string _file)
 {
-    if (this->directories.find(dir_id) == this->directories.end())
+    std::string directory = "data/images/" + _path;
+    if (this->directories.find(directory) == this->directories.end())
     {
-        this->directories[dir_id] = std::make_unique<Directory>("data/images/products/" + product_path, dir_id);
+        this->directories[directory] = std::make_unique<Directory>(directory);
     }
 
-    return this->directories[dir_id]->GetBitmap(png);
+    return this->directories[directory]->GetBitmap(_file);
 }
 
 void GFXHandler::Clear()

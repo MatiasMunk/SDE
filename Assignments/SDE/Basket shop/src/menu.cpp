@@ -1,6 +1,6 @@
 #include "menu.hpp"
 
-Menu::Menu(int _x, int _y, int _w, int _h, FontHandler &_font_handler, int &_shop_page) : x(_x), y(_y), w(_w), h(_h), font_handler(&_font_handler), shop_page(&_shop_page)
+Menu::Menu(int _x, int _y, int _w, int _h, FontHandler& _font_handler, int& _shop_page) : x(_x), y(_y), w(_w), h(_h), font_handler(&_font_handler), shop_page(&_shop_page)
 {
 	this->menus.push_back("Home");
 	this->menus.push_back("Laptop");

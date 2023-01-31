@@ -15,25 +15,24 @@ public:
     {
     private:
         std::string path;
-        unsigned int id;
-        std::map<unsigned int, ALLEGRO_BITMAP*> bitmaps;
+        std::map<std::string, ALLEGRO_BITMAP*> bitmaps;
 
     public:
-        Directory(std::string path, unsigned int id);
-        ALLEGRO_BITMAP* GetBitmap(std::string png);
+        Directory(std::string _path);
+        ALLEGRO_BITMAP* GetBitmap(std::string _file);
         void Clear();
     };
 
 private:
     static bool initialized_;
-    static std::map<unsigned int, std::unique_ptr<Directory>> directories;
+    static std::map<std::string, std::unique_ptr<Directory>> directories;
 
 public:
     static std::string path;
 
     GFXHandler();
-    GFXHandler(std::string path);
-    ALLEGRO_BITMAP* GetBitmap(std::string product_path, unsigned int dir_id, std::string png);
+    GFXHandler(std::string _path);
+    ALLEGRO_BITMAP* GetBitmap(std::string _path, std::string _file);
     void Clear();
 };
 
